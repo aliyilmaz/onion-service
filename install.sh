@@ -164,11 +164,11 @@ if [ $TOTAL_LINE -eq 8 ]
     echo $HiddenServicePortContent >> $TORRC_FILE
 fi
  
-sh -c '"./tor-browser_$LANG/Browser/start-tor-browser"'
+sh -c 'timeout 3s "./tor-browser_$LANG/Browser/start-tor-browser"' 
 
 TOTAL_LINE=`wc "$TORRC_FILE" | awk '{print $1}'`
 
-if [ $TOTAL_LINE -eq 9 ]
+if [ -f "$ONION_FOLDER"hostname ]
 then
 echo "          
 
