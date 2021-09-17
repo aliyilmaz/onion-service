@@ -104,13 +104,13 @@ fi
 
 [ ! -d "$SRC" ] && mkdir "$SRC"
 
-FILE="$SRC"/tor-browser-linux64-"$TOR_VERSION"_"$LANG".tar.xz
-[ ! -f "$FILE" ] && wget -O "$SRC"/tor-browser-linux64-"$TOR_VERSION"_"$LANG".tar.xz https://dist.torproject.org/torbrowser/"$TOR_VERSION"/tor-browser-linux64-"$TOR_VERSION"_"$LANG".tar.xz 
+FILE="$SRC"tor-browser-linux64-"$TOR_VERSION"_"$LANG".tar.xz
+[ ! -f "$FILE" ] && wget -O "$SRC"tor-browser-linux64-"$TOR_VERSION"_"$LANG".tar.xz https://dist.torproject.org/torbrowser/"$TOR_VERSION"/tor-browser-linux64-"$TOR_VERSION"_"$LANG".tar.xz 
 
-[ ! -f "$FILE" ] && sudo chmod -R 0644 "$SRC"/tor-browser-linux64-"$TOR_VERSION"_"$LANG".tar.xz
+[ ! -f "$FILE" ] && sudo chmod -R 0644 "$SRC"tor-browser-linux64-"$TOR_VERSION"_"$LANG".tar.xz
 
 FOLDER=tor-browser_"$LANG"
-[ ! -d "$FOLDER" ] && tar xf "$SRC"/tor-browser-linux64-"$TOR_VERSION"_"$LANG".tar.xz
+[ ! -d "$FOLDER" ] && tar xf "$SRC"tor-browser-linux64-"$TOR_VERSION"_"$LANG".tar.xz
 
 TOR_FOLDER="$(pwd)"/tor-browser_"$LANG"/Browser/TorBrowser/Data/Tor/
 ONION_FOLDER="$TOR_FOLDER"HiddenServiceDir/
