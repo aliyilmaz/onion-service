@@ -11,8 +11,8 @@ or
 
 ---
 
-### Lisans
-Bu dizinde bulunan yönerge ve dosyalar **GPL3** lisansı altında paylaşılmıştır.
+### License
+The instructions and files in this directory are shared under the **GPL3** license.
 
 > Copyright (C) 2021, Ali Yılmaz and contributors 
 > 
