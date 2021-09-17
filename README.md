@@ -3,11 +3,11 @@ Scripts to easily manage Tor Browser's onion service.
 
 ## install
 
-    wget -O onion-service.zip https://github.com/aliyilmaz/onion-service/archive/refs/heads/main.zip && unzip onion-service.zip && mv onion-service-main ./onion-service && rm -r onion-service.zip && sh ./onion-service/install.sh 
+    wget -O onion-service.zip https://github.com/aliyilmaz/onion-service/archive/refs/heads/main.zip && unzip onion-service.zip && mv onion-service-main ./onion-service && rm -r onion-service.zip && cd ./onion-service && sh install.sh 
 
 or
 
-    git clone https://github.com/aliyilmaz/onion-service.git && sh ./onion-service/install.sh
+    git clone https://github.com/aliyilmaz/onion-service.git && cd ./onion-service && sh install.sh
 
 ---
 
