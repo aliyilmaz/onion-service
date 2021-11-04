@@ -1,7 +1,11 @@
 #!/bin/bash
 
+#  wget -qO- 'https://www.torproject.org/download/' | perl -l -0777 -ne 'print $1 if /<title.*?>\s*(.*?)\s*<\/title/si'
+# <a class="btn btn-primary mt-4 downloadLink" href="/dist/torbrowser/10.5.10/tor-browser-linux64-10.5.10_en-US.tar.xz">Download for Linux</a>
+# wget -qO- 'https://www.torproject.org/download/' | perl -l -0777 -ne 'print $1 if /\/tor-browser-linux64-\s*(.*?)\s*_en/si'
+
 SRC="src/"
-TOR_VERSION=10.5.6
+TOR_VERSION=$(wget -qO- 'https://www.torproject.org/download/' | perl -l -0777 -ne 'print $1 if /\/tor-browser-linux64-\s*(.*?)\s*_en/si')
 
 echo "
 
